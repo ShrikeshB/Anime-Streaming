@@ -1,0 +1,155 @@
+:root {
+    --bgColor1: #0f0f0f;
+}
+.PlayEpisode-section {
+    padding: 2em 6em;
+    .card-container{
+        padding: 0;
+    }
+
+    .start, .End{
+        padding: 3em 0em;
+    }
+}
+.PlayEpisode-container {
+    width: 100%;
+    display: flex;
+    margin-top: 5em;
+    position: relative;
+    .EpisodeVideo {
+        width: 900px;
+    }
+
+    .left {
+        letter-spacing: 3px;
+        width: 80%;
+        .controls {
+            margin-top: 10px;
+            display: flex;
+            opacity: 50%;
+
+            .auto-play {
+                label {
+                    cursor: pointer;
+                    user-select: none;
+                }
+                input[type="checkbox"] {
+                    margin-right: 0.5em;
+                }
+            }
+
+            .switch-ep {
+                margin-left: 2em;
+                display: flex;
+                .prev {
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    text-decoration: none;
+                    color: white;
+                    img {
+                        width: 10px;
+                        height: 10px;
+                        margin-right: 10px;
+                    }
+                }
+                .next {
+                    margin-left: 1em;
+                    img {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+        .ep-content {
+            margin-top: 2em;
+            width: 100%;
+            background-color: #0f0f0f;
+            padding: 1em 2em;
+            position: absolute;
+            bottom: -25%;
+            .Ep-data {
+                letter-spacing: 3px;
+                font-size: 25px;
+            }
+        }
+    }
+
+    .right {
+        width: 32%;
+        .subHead {
+            letter-spacing: 3px;
+            font-size: 25px;
+            margin-bottom: 2em;
+        }
+        .episode-list {
+            display: flex;
+            flex-direction: column;
+
+            height: 500px;
+            padding: 2em;
+            background-color: var(--bgColor1);
+
+            .ep-list-container {
+                overflow-y: scroll;
+                // -ms-overflow-style: none;  /* Internet Explorer 10+ */
+                scrollbar-width: none;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                a {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+.All-Episode {
+    background-color: #0f0f0f;
+    margin-top: 9em;
+    .season {
+        padding: 2em;
+        .list-season {
+            margin-bottom: 2em;
+            display: flex;
+            p {
+                cursor: pointer;
+                opacity: 40%;
+            }
+            p ~ p {
+                margin-left: 1em;
+            }
+            p.active {
+                opacity: 100%;
+            }
+        }
+        .episodes {
+            display: grid;
+            grid-template-columns: repeat(16, 1fr);
+            justify-items: center;
+            .ep {
+                width: 50px;
+                height: 35px;
+                border-radius: 2px;
+                background-color: #323232;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                opacity: 40%;
+                color: white;
+                text-decoration: none;
+                user-select: none;
+               
+            }
+            .ep.active {
+                opacity: 100%;
+                background-color: red;
+            }
+        }
+    }
+}

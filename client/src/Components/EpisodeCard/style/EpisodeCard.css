@@ -1,0 +1,63 @@
+.EpisodeCard {
+  background-color: #fff;
+  width: 90%;
+  cursor: pointer;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1em;
+  padding: 1em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  letter-spacing: 3px;
+  font-size: 10px;
+  -webkit-transition: ease .2s;
+  transition: ease .2s;
+}
+
+.EpisodeCard .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.EpisodeCard .left .content {
+  margin-left: 1em;
+}
+
+.EpisodeCard .left .content .Ep {
+  font-size: 15px;
+}
+
+.EpisodeCard .left .icon-container {
+  width: 20%;
+}
+
+.EpisodeCard .left .icon-container img {
+  width: 100%;
+}
+
+.EpisodeCard .right {
+  text-align: center;
+}
+
+.EpisodeCard:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: ease .2s;
+  transition: ease .2s;
+}
+
+.EpisodeCard.active {
+  background-color: red;
+  color: white;
+}
+/*# sourceMappingURL=EpisodeCard.css.map */

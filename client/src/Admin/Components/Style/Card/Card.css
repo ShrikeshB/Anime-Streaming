@@ -1,0 +1,440 @@
+.card {
+  width: 280px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  color: white;
+}
+
+.card .img-container {
+  width: 70%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.card .img-container img {
+  width: 100%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.card .img-container::before {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.card .content {
+  margin-top: 1em;
+}
+
+.card .content p {
+  font-size: 12px;
+  opacity: 50%;
+  letter-spacing: 2px;
+}
+
+.card .content h1 {
+  letter-spacing: 3px;
+  margin: 0.2em 0em;
+}
+
+.card .content span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 12px;
+}
+
+.card .content span .circle {
+  height: 5px;
+  width: 5px;
+  background-color: red;
+  border-radius: 100%;
+  margin-right: 0.5em;
+}
+
+.card .content span p {
+  opacity: 50%;
+  letter-spacing: 2px;
+}
+
+.card .Btns {
+  position: absolute;
+  width: 20%;
+  top: 30%;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card .Btns .Edit-Btn,
+.card .Btns .Delete-Btn {
+  width: 100px;
+  height: 40px;
+  background-color: #17af9a;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.card .Btns .Delete-Btn {
+  margin-top: 1em;
+  background-color: red;
+}
+
+.card .Btns a {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card:hover .img-container img {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.card:hover .img-container::before {
+  content: "";
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.888);
+}
+
+.card:hover .overlay {
+  display: block;
+}
+
+.card:hover .Btns {
+  opacity: 100%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-animation-name: popUp;
+          animation-name: popUp;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes popUp {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes popUp {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.AnimeListCard .editForm {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+  background: #000000b4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: none;
+  z-index: 5;
+}
+
+.AnimeListCard .editForm h1 {
+  font-family: Onsen Japan Demo;
+}
+
+.AnimeListCard .editForm.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.AnimeListCard .close-btn {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 100%;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.AnimeListCard .close-btn img {
+  width: 50%;
+}
+
+.AnimeListCard form {
+  width: 50%;
+  height: 80%;
+  background-color: #fff;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 0;
+}
+
+.AnimeListCard form .content {
+  width: 100%;
+}
+
+.AnimeListCard form .content .section1 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.AnimeListCard form .content .section1 img {
+  width: 100%;
+  z-index: 2;
+}
+
+.AnimeListCard form .content .section1 .img-container .overlay {
+  background-color: rgba(0, 0, 0, 0.63);
+  position: absolute;
+  z-index: 5;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+}
+
+.AnimeListCard form .content .section1 .img-container .overlay img {
+  width: 20%;
+}
+
+.AnimeListCard form .content .section1 .img-container .overlay:hover {
+  opacity: 100%;
+}
+
+.AnimeListCard form .content .section1 .poster-img {
+  background-color: #9a9a9a;
+  overflow: hidden;
+  width: 30%;
+  height: 300px;
+  border-radius: 5px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 10%;
+  left: 10%;
+  z-index: 3;
+  -webkit-box-shadow: 0px 0px 9px black;
+          box-shadow: 0px 0px 9px black;
+}
+
+.AnimeListCard form .content .section1 .cover-img {
+  background-color: #9a9a9a;
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+}
+
+.AnimeListCard form .content .section2 {
+  margin-top: 10em;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.AnimeListCard form .content .section2 .videofile {
+  margin: 0em;
+  margin-left: 5em;
+  color: white;
+  letter-spacing: 2px;
+  cursor: pointer;
+  background-color: red;
+  margin-top: 1em;
+  padding: 1em;
+  width: 20%;
+}
+
+.AnimeListCard form .content .section2 label {
+  color: black;
+  text-align: left;
+  cursor: default;
+  width: auto;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: 5em;
+}
+
+.AnimeListCard form .content .section2 textarea {
+  color: black;
+  border: 1px solid black;
+  width: 80%;
+}
+
+.AnimeListCard form .content .section2 input {
+  color: black;
+  border-color: black;
+  width: 80%;
+}
+
+.AnimeListCard form .content .section2 .radioGrp {
+  margin-left: 6em;
+}
+
+.AnimeListCard form .content .section2 .radioGrp label {
+  margin: 0;
+}
+
+.AnimeListCard form .content .section2 .radioGrp input {
+  width: 10%;
+}
+
+.AnimeListCard form .content .section2 select {
+  color: black;
+  width: 80%;
+  background-color: #d2d2d2;
+}
+
+.AnimeListCard form .content .section2 video {
+  width: 80%;
+}
+
+.AnimeListCard form .content .section2 button {
+  margin: 3em 0em;
+  width: 30%;
+  letter-spacing: 2px;
+}
+/*# sourceMappingURL=Card.css.map */

@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+body {
+    background-color: black;
+}
+#root {
+    background-color: black;
+}
+section {
+    width: 100%;
+    background-color: black;
+
+    .start {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        padding: 3em 6em;
+
+        h1 {
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+
+        .line {
+            width: 85%;
+            background-color: #fff;
+            height: 2px;
+        }
+    }
+
+    .End {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 3em 6em;
+
+        .line {
+            width: 85%;
+            background-color: #fff;
+            height: 2px;
+        }
+
+        a {
+            background-color: red;
+            text-decoration: none;
+            color: white;
+            padding: 0.5em 4em;
+            border-radius: 5em;
+        }
+    }
+}
+
+.scroll {
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateZ(270deg);
+    right: -5em;
+    display: none;
+    .img-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0em 1em;
+        transition: 1s;
+        img {
+            width: 40%;
+        }
+
+        .img1 {
+            animation-name: scroll-anime;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+
+        .img2 {
+            animation-name: scroll-anime;
+            animation-duration: 1s;
+            animation-delay: 0.15s;
+            animation-iteration-count: infinite;
+        }
+    }
+    p {
+        margin: 0;
+        letter-spacing: 8px;
+        font-size: 12px;
+    }
+}
+
+.card-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 4em;
+    justify-items: center;
+    // margin: 6em 0em;
+    padding: 2em 4em;
+}
+
+.spinner {
+    width: 10%;
+    position: absolute;
+    z-index: 105;
+    top: 30%;
+    left: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+
+    img {
+        width: 100%;
+        animation: rotating 2s linear;
+        animation-iteration-count: infinite;
+    }
+}
+
+.spinner.active {
+    display: flex;
+}
+@keyframes rotating {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+.loading {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 102;
+    backdrop-filter: blur(1em);
+    background-color: rgba(0, 0, 0, 0.567);
+    display: none;
+}
+.loading.active {
+    display: block;
+}

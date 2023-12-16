@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
+}
+
+body {
+  background-color: black;
+}
+
+#root {
+  background-color: black;
+}
+
+section {
+  width: 100%;
+  background-color: black;
+}
+
+section .start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+  padding: 3em 6em;
+}
+
+section .start h1 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+section .start .line {
+  width: 85%;
+  background-color: #fff;
+  height: 2px;
+}
+
+section .End {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 3em 6em;
+}
+
+section .End .line {
+  width: 85%;
+  background-color: #fff;
+  height: 2px;
+}
+
+section .End a {
+  background-color: red;
+  text-decoration: none;
+  color: white;
+  padding: 0.5em 4em;
+  border-radius: 5em;
+}
+
+.scroll {
+  position: fixed;
+  z-index: 10;
+  top: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: rotateZ(270deg);
+          transform: rotateZ(270deg);
+  right: -5em;
+  display: none;
+}
+
+.scroll .img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0em 1em;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.scroll .img-container img {
+  width: 40%;
+}
+
+.scroll .img-container .img1 {
+  -webkit-animation-name: scroll-anime;
+          animation-name: scroll-anime;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.scroll .img-container .img2 {
+  -webkit-animation-name: scroll-anime;
+          animation-name: scroll-anime;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 0.15s;
+          animation-delay: 0.15s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.scroll p {
+  margin: 0;
+  letter-spacing: 8px;
+  font-size: 12px;
+}
+
+.card-container {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  row-gap: 4em;
+  justify-items: center;
+  padding: 2em 4em;
+}
+
+.spinner {
+  width: 10%;
+  position: absolute;
+  z-index: 105;
+  top: 30%;
+  left: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+}
+
+.spinner img {
+  width: 100%;
+  -webkit-animation: rotating 2s linear;
+          animation: rotating 2s linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.spinner.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@keyframes rotating {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+.loading {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 102;
+  -webkit-backdrop-filter: blur(1em);
+          backdrop-filter: blur(1em);
+  background-color: rgba(0, 0, 0, 0.567);
+  display: none;
+}
+
+.loading.active {
+  display: block;
+}
+/*# sourceMappingURL=explore.css.map */

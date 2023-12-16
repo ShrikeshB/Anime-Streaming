@@ -1,0 +1,29 @@
+.warning-container {
+    width: 100%;
+    background-color: #fff28f;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    position: fixed;
+    z-index: 500;
+    transition: ease 0.1s;
+    display: none;
+    span {
+        overflow: hidden;
+        width: 2%;
+        cursor: pointer;
+        img {
+            width: 50%;
+        }
+    }
+}
+
+.warning-container.active {
+    display: flex;
+}
+
+.warning-container.close {
+    display: none;
+}

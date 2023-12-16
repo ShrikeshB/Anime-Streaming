@@ -1,0 +1,430 @@
+nav {
+  width: 100%;
+  padding: 2em 6em;
+  position: absolute;
+  height: 30vh;
+  z-index: 100;
+}
+
+nav .nav-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  z-index: 100;
+}
+
+nav .nav-container .logo h1 {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 5px;
+  font-family: Onsen Japan Demo;
+}
+
+nav .nav-container a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+
+nav .nav-container .nav-bar {
+  background-color: #fff;
+  color: black;
+  height: 100vh;
+  width: 30%;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  padding: 2em;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  z-index: 200;
+  -webkit-box-shadow: 1px 0px 16px 8px rgba(0, 0, 0, 0.384);
+          box-shadow: 1px 0px 16px 8px rgba(0, 0, 0, 0.384);
+}
+
+nav .nav-container .nav-bar .logo {
+  letter-spacing: 4px;
+  margin: 2em 0em;
+}
+
+nav .nav-container .nav-bar .logo h1 {
+  color: black;
+}
+
+nav .nav-container .nav-bar .nav-title {
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+
+nav .nav-container .nav-bar .close-btn {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  float: right;
+}
+
+nav .nav-container .nav-bar .close-btn .line {
+  background-color: black;
+  width: 100%;
+  height: 2px;
+  display: block;
+}
+
+nav .nav-container .nav-bar .close-btn .l1 {
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+}
+
+nav .nav-container .nav-bar .close-btn .l2 {
+  -webkit-transform: rotateZ(135deg);
+          transform: rotateZ(135deg);
+  margin-top: -2px;
+}
+
+nav .nav-container .nav-bar .genre {
+  border-bottom: 1px solid black;
+  margin-bottom: 2em;
+}
+
+nav .nav-container .nav-bar .genre ul {
+  list-style: none;
+  font-size: 10px;
+}
+
+nav .nav-container .nav-bar .genre ul li {
+  margin: 1.5em 1em;
+}
+
+nav .nav-container .nav-bar .genre ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .nav-container .nav-bar .genre ul li a .genre-line {
+  display: block;
+  background-color: black;
+  height: 0.8px;
+  margin-left: 1em;
+  width: 0%;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+nav .nav-container .nav-bar .genre ul li a:hover .genre-line {
+  width: 100%;
+}
+
+nav .nav-container .nav-bar .nav-list {
+  list-style: none;
+}
+
+nav .nav-container .nav-bar .nav-list li {
+  margin-bottom: 1em;
+}
+
+nav .nav-container .nav-bar .search-bar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: -1em;
+}
+
+nav .nav-container .nav-bar .search-bar form {
+  color: color;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+}
+
+nav .nav-container .nav-bar .search-bar form input {
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 1em;
+  outline: none;
+  color: black;
+  width: 90%;
+}
+
+nav .nav-container .nav-bar .search-bar form .search-btn {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 8%;
+  border-bottom: 1px solid black;
+  padding-right: 1em;
+}
+
+nav .nav-container .main-search-bar {
+  width: 0%;
+  height: 3em;
+  overflow: hidden;
+  -webkit-transition: ease 0.15s;
+  transition: ease 0.15s;
+}
+
+nav .nav-container .main-search-bar form {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+}
+
+nav .nav-container .main-search-bar form input {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  color: black;
+  border-radius: 2em 0 0em 2em;
+}
+
+nav .nav-container .main-search-bar form button {
+  background-color: #fff;
+  border-radius: 0em 2em 2em 0em;
+  overflow: hidden;
+  height: 100%;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav .nav-container .main-search-bar form button img {
+  width: 50%;
+}
+
+nav .nav-container .main-search-bar.active {
+  -webkit-transition: ease 0.15s;
+  transition: ease 0.15s;
+  -webkit-animation-name: searchBarAnime;
+          animation-name: searchBarAnime;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes searchBarAnime {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 65%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes searchBarAnime {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 65%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+nav .nav-container .right-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1em;
+}
+
+nav .nav-container .right-side button {
+  margin-top: 5em;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 80%;
+}
+
+nav .nav-container .right-side .close {
+  width: 35px;
+  height: 35px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5em;
+  cursor: pointer;
+}
+
+nav .nav-container .right-side .close .line1,
+nav .nav-container .right-side .close .line2 {
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  display: block;
+  position: absolute;
+}
+
+nav .nav-container .right-side .close .line1 {
+  -webkit-animation-name: closeAnimation1;
+          animation-name: closeAnimation1;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+nav .nav-container .right-side .close .line2 {
+  -webkit-animation-name: closeAnimation2;
+          animation-name: closeAnimation2;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes closeAnimation1 {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 40deg;
+  }
+}
+
+@keyframes closeAnimation1 {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 40deg;
+  }
+}
+
+@-webkit-keyframes closeAnimation2 {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 140deg;
+  }
+}
+
+@keyframes closeAnimation2 {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 140deg;
+  }
+}
+
+nav .search {
+  width: 25px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  right: 6em;
+}
+
+nav .search img {
+  width: 100%;
+}
+
+.burger {
+  width: 30px;
+  height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  display: block;
+  height: 4px;
+  background-color: white;
+  border-radius: 5em;
+}
+
+.logo h1 {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 5px;
+  font-family: Onsen Japan Demo;
+}
+/*# sourceMappingURL=nav.css.map */

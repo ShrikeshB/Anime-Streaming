@@ -1,0 +1,13 @@
+.admin-container {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    width: 100%;
+}
+
+.Card-container {
+    margin-top: 5em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 5em;
+}

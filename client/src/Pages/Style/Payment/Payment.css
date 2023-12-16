@@ -1,0 +1,137 @@
+.Auth-container .form-container .payment-form {
+  overflow: hidden;
+  -webkit-animation-name: animePaymentForm;
+          animation-name: animePaymentForm;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-left: 1px solid black;
+  width: 50%;
+  top: 10%;
+}
+
+.Auth-container .form-container .payment-form label {
+  margin-top: 1em;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.Auth-container {
+  overflow: hidden;
+}
+
+.Auth-container .payment.form-container {
+  top: 15%;
+  height: 600px;
+}
+
+.Payment-sub-contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  padding: 1em;
+  background-color: #fff;
+}
+
+.Payment-sub-contain .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  width: 80%;
+  font-size: 20px;
+  margin-top: 1.2em;
+}
+
+.Payment-sub-contain .container ul ~ ul p {
+  text-align: right;
+}
+
+.Payment-sub-contain .container ul {
+  list-style: none;
+}
+
+.Payment-sub-contain .container ul li {
+  border-bottom: 1px solid black;
+  padding: .5em 0;
+}
+
+.Payment-sub-contain .container ul li:last-child {
+  border: none;
+}
+
+.Payment-sub-contain .container ul li:last-child p {
+  font-weight: 600;
+}
+
+.Payment-sub-contain .Bill-info {
+  border: none;
+  width: 50%;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5em;
+}
+
+.Payment-sub-contain .Bill-info .container {
+  margin-top: 2em;
+}
+
+.Payment-sub-contain .Bill-info h1 {
+  font-weight: 400;
+  letter-spacing: 5px;
+  margin-bottom: 2em;
+}
+
+.Payment-sub-contain .Bill-info ul {
+  list-style: none;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.Payment-sub-contain .Bill-info ul li ~ li {
+  margin-top: 1em;
+}
+
+.Payment-sub-contain .payment-form form {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@-webkit-keyframes animePaymentForm {
+  from {
+    height: 0em;
+    padding: 0;
+  }
+  to {
+    height: 100%;
+    padding: 2em;
+  }
+}
+
+@keyframes animePaymentForm {
+  from {
+    height: 0em;
+    padding: 0;
+  }
+  to {
+    height: 100%;
+    padding: 2em;
+  }
+}
+/*# sourceMappingURL=Payment.css.map */

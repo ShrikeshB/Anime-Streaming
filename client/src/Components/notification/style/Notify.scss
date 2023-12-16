@@ -1,0 +1,43 @@
+.notify {
+    position: absolute;
+    z-index: 100;
+    overflow: hidden;
+    background-color: white;
+    width: 500px;
+    height: 280px;
+    color: black;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.338);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    h1 {
+        color: red;
+        margin-top: 1em;
+
+    }
+    p {
+        justify-self: center;
+        margin-top: 2em;
+
+    }
+
+    .close-btn{
+        position: absolute;
+        overflow: hidden;
+        width: 25px;
+        height: 25px;
+        top: 10%;
+        right: 10%;
+        cursor: pointer;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.notify.active{
+    display: flex;
+}

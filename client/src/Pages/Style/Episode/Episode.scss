@@ -1,0 +1,119 @@
+.bg-img {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+    img {
+        width: 100%;
+    }
+}
+.bg-img::before {
+    content: "";
+    background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0.433));
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+.main-section {
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    .main-container {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 3;
+
+        .content {
+            position: absolute;
+            padding: 0em 6em;
+            bottom: 10%;
+            display: flex;
+            align-items: flex-end;
+            width: 100%;
+            height: 100%;
+            justify-content: space-between;
+            .left {
+                letter-spacing: 2px;
+                .title {
+                    text-transform: uppercase;
+                    font-size: 4em;
+                }
+                .ep-name {
+                    margin-top: 1em;
+                    font-weight: 300;
+                }
+
+                .episode {
+                    display: flex;
+                    align-items: center;
+                    h2 {
+                        font-weight: 400;
+                        margin-right: 2em;
+                    }
+                    .btn-grp {
+                        display: flex;
+                        img {
+                            cursor: pointer;
+                        }
+                        img ~ img {
+                            margin-left: 2em;
+                        }
+                    }
+                }
+            }
+
+            .right {
+                width: 50%;
+                position: relative;
+                .season {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    position: absolute;
+                    bottom: -10em;
+                    right: -10%;
+                    img {
+                        width: 1em;
+                        height: 2em;
+                        cursor: pointer;
+                    }
+                    span {
+                        font-size: 23em;
+                        font-weight: 200;
+                        margin: 0em 0.2em;
+                        display: flex;
+                        pre{
+                            font-weight: 280;
+                        }
+                    }
+                }
+            }
+
+            .play-btn {
+                position: absolute;
+                z-index: 1;
+                top: 50%;
+                left: 45%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 8%;
+                cursor: pointer;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

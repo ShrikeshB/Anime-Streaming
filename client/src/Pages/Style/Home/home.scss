@@ -1,0 +1,166 @@
+:root{
+    --primary-color : #17af9a;
+    --font-Fam : Onsen Japan Demo;
+}
+* {
+    font-family: poppins;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+}
+
+.hero-section {
+    height: 100vh;
+    overflow: hidden;
+    min-height: 100vh;
+    width: 100%;
+    color: white;
+    perspective: 1000px;
+    background-color: black;
+
+    section {
+        transform-style: preserve-3d;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .img-holder {
+            position: relative;
+
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: -4em;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            video{
+                width: 120%;
+                height: 120%;
+            }
+        }
+
+        .img-holder2.active {
+            position: absolute;
+            z-index: 1;
+            height: 140vh;
+            width: 150vw;
+            background-color: rgba(0, 0, 0, 0.432);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: -8em;
+            transition: .25s;
+        }
+        .content {
+            width: 50%;
+            position: absolute;
+            z-index: 6;
+            transition: all 0.75s ease-out;
+            bottom: 35%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 5px;
+            height: 500px;
+            text-shadow: rgba(0, 0, 0, 0.534) 0px 0px 15px;
+            // background-color: black;
+            .heading {
+                // background-color: yellow;
+                cursor: pointer;
+                z-index: 10;
+                span {
+                    // position: absolute;
+                    font-size: 4.2rem;
+                    font-weight: 1000;
+                    margin: 0;
+                }
+                h1 {
+                    // position: absolute;
+
+                    font-size: 8rem;
+                    font-weight: 1000;
+                    margin: 0;
+                    margin-top: -50px;
+                }
+                p {
+                    // position: absolute;
+                    top: 80%;
+                }
+            }
+
+            .heading.active {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .btn-grp {
+        position: absolute;
+        background-color: grey;
+        a {
+            position: absolute;
+            z-index: 5;
+            text-align: center;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            background: none;
+            border: solid rgba(192, 192, 192, 0.877) 2px;
+            width: 12em;
+            height: 3.5em;
+            border-radius: 50px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            font-size: 18px;
+            cursor: pointer;
+            text-shadow: rgba(0, 0, 0, 0.534) 0px 0px 15px;
+            transition: all 0.5s ease-out;
+            transform: translate(0em, 0em);
+            right: -6em;
+            top: 0;
+            opacity: 0;
+        }
+
+        a:hover {
+            transition: all 0.5s ease;
+            background-color: white;
+            color: black;
+            text-shadow: none;
+        }
+    }
+
+    .btn-grp.active {
+        a {
+            opacity: 1;
+        }
+        .b1 {
+            transform: translate(12em, -15em);
+        }
+        .b2 {
+            transform: translate(-20em, -12em);
+        }
+        .b3 {
+            transform: translate(-25em, 8em);
+        }
+        .b4 {
+            transform: translate(20em, 6em);
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.about-us {
+  height: 100vh;
+  width: 100%;
+}
+
+.about-us .banner {
+  background-image: url(../../../Resources/Images/MHA.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+  height: 30vh;
+}
+
+.about-us .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0em 5em;
+  padding-top: 4em;
+  text-align: justify;
+}
+
+.about-us .container h1 {
+  font-weight: 100;
+}
+
+.about-us .container h1 span {
+  font-weight: 400;
+}
+
+.about-us .container .logo {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.about-us .container .logo p {
+  font-family: Onsen Japan Demo;
+  font-size: 50px;
+}
+/*# sourceMappingURL=About.css.map */

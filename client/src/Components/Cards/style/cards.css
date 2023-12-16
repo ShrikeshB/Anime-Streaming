@@ -1,0 +1,168 @@
+.card-container {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  row-gap: 4em;
+  justify-items: center;
+  padding: 2em 4em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  width: 300px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  color: white;
+}
+
+.card .img-container {
+  width: 70%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.card .img-container img {
+  width: 100%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.card .img-container::before {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.card .content {
+  margin-top: 1em;
+}
+
+.card .content p {
+  font-size: 12px;
+  opacity: 50%;
+  letter-spacing: 2px;
+}
+
+.card .content h1 {
+  letter-spacing: 3px;
+  margin: 0.2em 0em;
+}
+
+.card .content span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 12px;
+}
+
+.card .content span .circle {
+  height: 5px;
+  width: 5px;
+  background-color: red;
+  border-radius: 100%;
+  margin-right: 0.5em;
+}
+
+.card .content span p {
+  opacity: 50%;
+  letter-spacing: 2px;
+}
+
+.card .play-btn {
+  position: absolute;
+  width: 20%;
+  top: 30%;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.card .play-btn img {
+  width: 100%;
+}
+
+.card:hover .img-container img {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.card:hover .img-container::before {
+  content: "";
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.677);
+}
+
+.card:hover .overlay {
+  display: block;
+}
+
+.card:hover .play-btn {
+  opacity: 100%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-animation-name: popUp;
+          animation-name: popUp;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes popUp {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes popUp {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/*# sourceMappingURL=cards.css.map */

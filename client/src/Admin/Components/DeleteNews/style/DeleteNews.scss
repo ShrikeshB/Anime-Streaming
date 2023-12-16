@@ -1,0 +1,12 @@
+.DeleteNews{
+    height: 100vh;
+    .news-container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        row-gap: 2em;
+        column-gap: 2em;
+        justify-items: center;
+        align-content: center;
+        padding: 2em;
+    }
+}

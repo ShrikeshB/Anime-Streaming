@@ -1,0 +1,18 @@
+.DeleteNews {
+  height: 100vh;
+}
+
+.DeleteNews .news-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  row-gap: 2em;
+  -webkit-column-gap: 2em;
+          column-gap: 2em;
+  justify-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 2em;
+}
+/*# sourceMappingURL=DeleteNews.css.map */

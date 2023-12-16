@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,CAAC;EACF,eAAe,CAAA,QAAC;CACnB;;AAED,AAAA,KAAK,CAAC;EACF,MAAM,EAAE,WAAW;EACnB,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,IAAI;CAChB;;AAED,AAAA,gBAAgB,CAAC;EACb,KAAK,EAAE,IAAI;EACX,QAAQ,EAAE,QAAQ;EAClB,OAAO,EAAE,IAAI;CAEhB",
+    "sources": [
+        "AdminStyle.scss"
+    ],
+    "names": [],
+    "file": "AdminStyle.css"
+}

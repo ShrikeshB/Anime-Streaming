@@ -1,0 +1,234 @@
+:root {
+    --primary-color: #17af9a;
+    --font1: Onsen Japan Demo;
+}
+
+#root {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+}
+
+.admin {
+    .banner {
+        width: 100%;
+        height: 30vh;
+        background-image: url(../../../../Resources//Assets/bg1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: relative;
+        flex-direction: column;
+        margin: 0;
+
+        .logo {
+            font-size: 18px;
+            align-self: flex-start;
+            margin-left: 3em;
+            margin-top: 2em;
+        }
+        h1 {
+            font-family: var(--font1);
+            font-size: 80px;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+            position: absolute;
+            top: 25%;
+            left: 3.5%;
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.admin-bg {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.821), rgba(0, 0, 0, 0.601)),
+        url(../../../../Resources//Assets/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    background-attachment: fixed;
+}
+
+.AddAnime {
+    width: 100%;
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigationHeader {
+    font-weight: 300;
+}
+
+form {
+    padding: 2em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .sections {
+        display: flex;
+    }
+
+    .section1,
+    .section2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+    }
+
+    .section2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input,
+    textarea,
+    select {
+        background-color: transparent;
+        color: white;
+        border: none;
+        border-bottom: 1px solid white;
+        padding: 1em;
+        margin: 2em 0em;
+        width: 100%;
+        outline: none;
+    }
+    input[type="file"] {
+        margin-bottom: 5em;
+        cursor: pointer;
+        opacity: 0%;
+        display: none;
+    }
+    label {
+        cursor: pointer;
+    }
+
+    .section2 {
+        margin-top: 4em;
+        label {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .img-container {
+                background-color: #9a9a9a;
+                border-radius: 5px;
+                width: 30%;
+                height: 300px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+                img {
+                    width: 30%;
+                }
+            }
+        }
+    }
+    label + label {
+        margin-top: 5em;
+    }
+    textarea {
+        border: 1px solid white;
+    }
+
+    button {
+        background-color: var(--primary-color);
+        border: none;
+        color: white;
+        padding: 1em 0em;
+        cursor: pointer;
+        width: 10%;
+    }
+
+    .radioGrp {
+        display: flex;
+        margin: 2em 0em;
+        width: 100%;
+    
+        input {
+            margin: 0;
+            padding: 0;
+            width: 10%;
+        }
+    }
+    select {
+        option {
+            color: black;
+        }
+    }
+}
+
+.blocker {
+    width: 20%;
+}
+
+.admin-nav {
+    padding: 1em 3em;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .logo {
+        font-family: var(--font1);
+        font-size: 18px;
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+    form {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            font-family: var(--font1);
+            font-size: 30px;
+        }
+    }
+    .search-btn {
+        display: flex;
+        height: 40px;
+        align-items: center;
+        justify-self: center;
+        width: 40%;
+
+        input {
+            border: 1px solid white;
+            background-color: #fff;
+            color: black;
+            border-radius: 5em 0em 0em 5em;
+            height: 100%;
+        }
+        button {
+            background-color: white;
+            border-radius: 0em 5em 5em 0em;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            img {
+                width: 50%;
+            }
+        }
+    }
+}

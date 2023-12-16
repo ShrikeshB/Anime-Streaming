@@ -1,0 +1,26 @@
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.AddNews {
+    width: 100%;
+    form {
+        align-items: center;
+        label {
+            overflow: hidden;
+            width: 100%;
+            input {
+                opacity: 100%;
+            }
+
+            .img-container {
+                height: 450px;
+                overflow: hidden;
+                background-color: #9a9a9a;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}

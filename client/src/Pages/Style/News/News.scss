@@ -1,0 +1,56 @@
+.News {
+    margin: 0;
+    
+    .banner {
+        width: 100%;
+        height: 30vh;
+        background-image: url(../../../Resources//Assets/bg1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        h1 {
+            font-family: Onsen Japan Demo;
+            font-weight: 600;
+            font-size: 50px;
+        }
+    }
+
+    .container {
+        display: flex;
+        padding: 2em 6em;
+        justify-content: space-between;
+        .left {
+            width: 73%;
+            .posts {
+                width: 100%;
+            }
+        }
+
+        .right{
+            margin-left: 1em;
+            width: 25%;
+            .topics{
+                background-color: #1b1b1b;
+                width: 100%;
+                padding: 2em;
+                ul{
+                    list-style: none;
+                    margin-top: 2em;
+                    margin-left: 1em;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                    }
+                    li~li{
+                        margin-top: 1em;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,72 @@
+footer {
+  background-image: url(../../../Resources/Assets/rec2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 150%;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0em 6em;
+}
+
+footer .left {
+  width: 50%;
+}
+
+footer .left .logo {
+  letter-spacing: 4px;
+  margin: 2em 0em;
+}
+
+footer .left .logo a {
+  text-decoration: none;
+}
+
+footer .left .logo h1 {
+  color: white;
+  font-family: Onsen Japan Demo;
+}
+
+footer .left ul {
+  margin-top: .5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+footer .left ul img {
+  width: 25px;
+  height: 25px;
+}
+
+footer .left ul a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+footer .left ul li ~ li {
+  margin-left: 1em;
+}
+
+footer .right {
+  width: 60%;
+  position: relative;
+}
+
+footer .right .img-container {
+  width: 95%;
+  float: right;
+  margin-right: -2em;
+}
+
+footer .right .img-container img {
+  width: 100%;
+}
+/*# sourceMappingURL=Footer.css.map */

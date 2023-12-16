@@ -1,0 +1,291 @@
+.dashboard {
+  background-image: url(../../../../Resources/Assets/bg1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  padding: 2em 6em;
+}
+
+.dashboard .tracker {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dashboard .tracker ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dashboard .tracker ul li {
+  cursor: pointer;
+  -webkit-transition: ease 0.15s;
+  transition: ease 0.15s;
+}
+
+.dashboard .tracker ul li h1 {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.dashboard .tracker ul li ~ li {
+  margin-left: 5em;
+}
+
+.dashboard .tracker li:hover {
+  opacity: 50%;
+  -webkit-transition: ease 0.15s;
+  transition: ease 0.15s;
+}
+
+.dashboard .tracker .clock {
+  font-size: 80px;
+  font-weight: 400;
+}
+
+.dashboard .op {
+  width: 50%;
+  margin-top: 5em;
+}
+
+.dashboard .op ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  width: 100%;
+}
+
+.dashboard .op ul a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 15px;
+}
+
+.dashboard .op ul .img-container {
+  width: 80%;
+}
+
+.dashboard .op ul .img-container img {
+  width: 100%;
+}
+
+.dashboard .op ul li {
+  -webkit-transition: ease 0.25s;
+  transition: ease 0.25s;
+}
+
+.dashboard .op ul li:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: ease 0.25s;
+  transition: ease 0.25s;
+}
+
+.dashboard .op ul ~ ul {
+  border-top: 1px solid white;
+  padding-top: 2em;
+  margin-top: 2em;
+}
+
+.dashboard .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 10%;
+  position: absolute;
+  bottom: 2%;
+  right: 5%;
+}
+
+.dashboard .bottom a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dashboard .bottom a img {
+  width: 20px;
+}
+
+.dashboard .bottom a ~ a {
+  margin-left: 1em;
+}
+
+.dashboard .bottom .logout {
+  text-decoration: none;
+  color: red;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.dashboard .bottom .logout img {
+  width: 20px;
+  margin-right: 8px;
+}
+
+.dashboard .user-info {
+  width: 100%;
+  margin-top: 2em;
+}
+
+.dashboard .user-info h1 {
+  font-size: 100px;
+}
+
+.dashboard .user-info p {
+  margin-top: -2em;
+}
+
+.dashboard .logo {
+  font-family: Onsen Japan Demo;
+  font-size: 30px;
+}
+
+.dashboard .user-details,
+.dashboard .anime-details {
+  width: 100%;
+  height: 100vh;
+  -webkit-backdrop-filter: blur(1em);
+          backdrop-filter: blur(1em);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+}
+
+.dashboard .user-details .container,
+.dashboard .anime-details .container {
+  background-color: #fff;
+  width: 65%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.dashboard .user-details .container .banner,
+.dashboard .anime-details .container .banner {
+  width: 100%;
+  height: 20%;
+  background-color: black;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 2em;
+  background-image: url(../../../../Resources/Images/MHA.jpg);
+  background-size: cover;
+}
+
+.dashboard .user-details .container .card-grp,
+.dashboard .anime-details .container .card-grp {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  justify-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  row-gap: 2em;
+}
+
+.dashboard .user-details .container .card,
+.dashboard .anime-details .container .card {
+  color: black;
+  -webkit-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.312);
+          box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.312);
+  padding: 1em;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.dashboard .user-details .container .card h1,
+.dashboard .anime-details .container .card h1 {
+  font-size: 45px;
+}
+
+.dashboard .user-details .container .card p,
+.dashboard .anime-details .container .card p {
+  font-size: 15px;
+  opacity: 60%;
+}
+
+.dashboard .close-btn {
+  background-color: #fff;
+  width: 45px;
+  height: 45px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.dashboard .close-btn img {
+  width: 50%;
+}
+
+.dashboard .anime-details .container {
+  height: 70%;
+}
+
+.dashboard .user-details.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dashboard .anime-details.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=Dashboard.css.map */

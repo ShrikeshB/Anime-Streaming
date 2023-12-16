@@ -1,0 +1,13 @@
+********* PROGRESS *************
+
+* anime can be added and deleted.
+* anime season and episode can be changed dynamically
+* WatchList
+* Search
+* authentication
+* Payment
+* Genre
+* no. of users as per plan
+* Ep progress
+* plan exipration
+* Continue watching

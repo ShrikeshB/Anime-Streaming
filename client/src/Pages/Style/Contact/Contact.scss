@@ -1,0 +1,34 @@
+.contact-us{
+    width: 100%;
+    height: 100vh;
+    .container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        .left{
+            width: 50%;
+            height: 100%;
+            .bg{
+                width: 100%;
+                height: 100%;
+                background-image: url(../../../Resources/Images/MHA.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+        }
+
+        .right{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 2em;
+            form{
+                align-items: center;
+                button{
+                    width: 50%;
+                }
+            }
+        }
+    }
+}

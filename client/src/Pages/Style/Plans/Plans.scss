@@ -1,0 +1,77 @@
+.plan-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background-image: url(../../../Resources/Images/planBG.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .plan-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 100%;
+        .plan-card {
+            color: black;
+            position: relative;
+            height: 80%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+
+            .title {
+                background-color: red;
+                color: white;
+                padding: 1.5em;
+                text-transform: uppercase;
+                font-weight: 600;
+                letter-spacing: 5px;
+                z-index: 5;
+                display: block;
+                position: absolute;
+                width: 100%;
+                text-align: center;
+
+                overflow: hidden;
+                p {
+                    white-space: nowrap;
+                }
+            }
+            .content {
+                padding: 2em 4em;
+                z-index: 1;
+                background-color: #fff;
+                display: block;
+                margin-top: 4em;
+                overflow: hidden;
+            }
+
+            ul {
+                list-style: none;
+                margin-top: 2em;
+                li {
+                    margin: 1em 0em;
+                }
+            }
+            .price {
+                font-size: 40px;
+
+                margin-top: 1.5em;
+            }
+            button {
+                background-color: red;
+                color: white;
+                border: none;
+                padding: 0.4em 2em;
+                margin-top: 1em;
+                font-size: 25px;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,400 @@
+.DeleteCard {
+  width: 100%;
+  background-color: #252525;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1em 2em;
+  margin-bottom: 2em;
+  border-radius: 10px;
+}
+
+.DeleteCard img {
+  width: 100%;
+}
+
+.DeleteCard .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+}
+
+.DeleteCard .left .sr-no {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: red;
+  font-size: 25px;
+}
+
+.DeleteCard .left .info {
+  margin-left: 2em;
+}
+
+.DeleteCard .right {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.DeleteCard .right .play-btn {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  -webkit-transition: ease 0.25s;
+  transition: ease 0.25s;
+  margin-right: 2em;
+}
+
+.DeleteCard .right .delete-btn {
+  background-color: red;
+  border: none;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+  height: 45px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  -webkit-transition: ease 0.25s;
+  transition: ease 0.25s;
+}
+
+.DeleteCard .right .delete-btn img {
+  width: 20%;
+  margin-right: 10px;
+}
+
+.DeleteCard .right .edit-btn {
+  background-color: #17af9a;
+  margin-right: 2em;
+}
+
+.DeleteCard .right .delete-btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: ease 0.25s;
+  transition: ease 0.25s;
+}
+
+.DeleteCard .right .play-btn:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.DeleteCard .video-container {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0%;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+  background: #000000b4;
+  display: none;
+}
+
+.DeleteCard .video-container .close-btn {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.DeleteCard .video-container .close-btn img {
+  width: 50%;
+}
+
+.DeleteCard .video-container video {
+  width: 50%;
+  z-index: 5;
+}
+
+.DeleteCard .video-container.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.DeleteCard .editForm {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+  background: #000000b4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: none;
+}
+
+.DeleteCard .editForm h1 {
+  font-family: Onsen Japan Demo;
+}
+
+.DeleteCard .editForm .close-btn {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 100%;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.DeleteCard .editForm .close-btn img {
+  width: 50%;
+}
+
+.DeleteCard .editForm form {
+  width: 50%;
+  height: 80%;
+  background-color: #fff;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 0;
+}
+
+.DeleteCard .editForm form .content {
+  width: 100%;
+}
+
+.DeleteCard .editForm form .content .section1 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.DeleteCard .editForm form .content .section1 img {
+  width: 100%;
+  z-index: 2;
+}
+
+.DeleteCard .editForm form .content .section1 .img-container .overlay {
+  background-color: rgba(0, 0, 0, 0.63);
+  position: absolute;
+  z-index: 5;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+}
+
+.DeleteCard .editForm form .content .section1 .img-container .overlay img {
+  width: 20%;
+}
+
+.DeleteCard .editForm form .content .section1 .img-container .overlay:hover {
+  opacity: 100%;
+}
+
+.DeleteCard .editForm form .content .section1 .poster-img {
+  background-color: #9a9a9a;
+  overflow: hidden;
+  width: 30%;
+  height: 300px;
+  border-radius: 5px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 40%;
+  left: 10%;
+  z-index: 3;
+  -webkit-box-shadow: 0px 0px 9px black;
+          box-shadow: 0px 0px 9px black;
+}
+
+.DeleteCard .editForm form .content .section1 .cover-img {
+  background-color: #9a9a9a;
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+}
+
+.DeleteCard .editForm form .content .section2 {
+  margin-top: 2em;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.DeleteCard .editForm form .content .section2 .videofile {
+  margin: 0em;
+  margin-left: 5em;
+  color: white;
+  letter-spacing: 2px;
+  cursor: pointer;
+  background-color: red;
+  margin-top: 1em;
+  padding: 1em;
+  width: 20%;
+}
+
+.DeleteCard .editForm form .content .section2 label {
+  color: black;
+  text-align: left;
+  cursor: default;
+  width: auto;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: 5em;
+}
+
+.DeleteCard .editForm form .content .section2 input {
+  color: black;
+  border-color: black;
+  width: 80%;
+}
+
+.DeleteCard .editForm form .content .section2 select {
+  color: black;
+  width: 80%;
+  background-color: #d2d2d2;
+}
+
+.DeleteCard .editForm form .content .section2 video {
+  width: 80%;
+}
+
+.DeleteCard .editForm form .content .section2 button {
+  margin: 3em 0em;
+  width: 30%;
+  letter-spacing: 2px;
+}
+
+.DeleteCard .editForm.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=DeleteCard.css.map */

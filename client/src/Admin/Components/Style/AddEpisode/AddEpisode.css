@@ -1,0 +1,87 @@
+select option {
+  color: black;
+}
+
+.episode-form {
+  width: 100%;
+}
+
+.episode-form form {
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.episode-form form .sections {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.episode-form form .sections .section1,
+.episode-form form .sections .section2 {
+  width: 100%;
+}
+
+.episode-form form .sections .section2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 4em;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+.episode-form form .sections .section2 label {
+  margin: 0;
+}
+
+.episode-form form .sections .section2 .videoLinks {
+  margin-top: 5em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  -webkit-column-gap: 1em;
+          column-gap: 1em;
+}
+
+.episode-form form .sections .section2 .videoLinks label {
+  width: 100%;
+}
+
+.episode-form form .sections .section2 .videoLinks label .video-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #9a9a9a;
+}
+
+.episode-form form .sections .section2 .videoLinks label .video-container video {
+  width: 100%;
+}
+
+.ViewAnime {
+  width: 100%;
+}
+
+.ViewAnime .Card-container {
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+}
+/*# sourceMappingURL=AddEpisode.css.map */

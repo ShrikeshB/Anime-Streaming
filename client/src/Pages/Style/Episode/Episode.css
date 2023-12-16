@@ -1,0 +1,168 @@
+.bg-img {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.bg-img img {
+  width: 100%;
+}
+
+.bg-img::before {
+  content: "";
+  background-image: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0.433)));
+  background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0.433));
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+
+.main-section {
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+
+.main-section .main-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+}
+
+.main-section .main-container .content {
+  position: absolute;
+  padding: 0em 6em;
+  bottom: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-section .main-container .content .left {
+  letter-spacing: 2px;
+}
+
+.main-section .main-container .content .left .title {
+  text-transform: uppercase;
+  font-size: 4em;
+}
+
+.main-section .main-container .content .left .ep-name {
+  margin-top: 1em;
+  font-weight: 300;
+}
+
+.main-section .main-container .content .left .episode {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-section .main-container .content .left .episode h2 {
+  font-weight: 400;
+  margin-right: 2em;
+}
+
+.main-section .main-container .content .left .episode .btn-grp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-section .main-container .content .left .episode .btn-grp img {
+  cursor: pointer;
+}
+
+.main-section .main-container .content .left .episode .btn-grp img ~ img {
+  margin-left: 2em;
+}
+
+.main-section .main-container .content .right {
+  width: 50%;
+  position: relative;
+}
+
+.main-section .main-container .content .right .season {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: absolute;
+  bottom: -10em;
+  right: -10%;
+}
+
+.main-section .main-container .content .right .season img {
+  width: 1em;
+  height: 2em;
+  cursor: pointer;
+}
+
+.main-section .main-container .content .right .season span {
+  font-size: 23em;
+  font-weight: 200;
+  margin: 0em 0.2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-section .main-container .content .right .season span pre {
+  font-weight: 280;
+}
+
+.main-section .main-container .content .play-btn {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 8%;
+  cursor: pointer;
+}
+
+.main-section .main-container .content .play-btn img {
+  width: 100%;
+}
+/*# sourceMappingURL=Episode.css.map */

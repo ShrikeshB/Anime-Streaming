@@ -1,0 +1,33 @@
+.NewsCard2 {
+    width: 400px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    .img-container {
+        width: 100%;
+        overflow: hidden;
+        img {
+            transition: ease 0.25s;
+            width: 100%;
+        }
+    }
+
+    .content {
+        text-align: center;
+        p ~ p {
+            opacity: 50%;
+        }
+    }
+}
+.NewsCard2:hover {
+    .img-container {
+        img {
+            transform: scale(1.2);
+            transition: ease 0.25s;
+        }
+    }
+}

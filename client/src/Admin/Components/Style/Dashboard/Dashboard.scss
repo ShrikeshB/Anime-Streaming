@@ -1,0 +1,213 @@
+.dashboard {
+    background-image: url(../../../../Resources/Assets/bg1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    padding: 2em 6em;
+
+    .tracker {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+
+        ul {
+            list-style: none;
+            display: flex;
+            li {
+                cursor: pointer;
+                transition: ease 0.15s;
+
+                h1 {
+                    font-size: 50px;
+                    font-weight: 500;
+                }
+            }
+            li ~ li {
+                margin-left: 5em;
+            }
+        }
+
+        li:hover {
+            opacity: 50%;
+            transition: ease 0.15s;
+        }
+
+        .clock {
+            font-size: 80px;
+            font-weight: 400;
+        }
+    }
+
+    .op {
+        width: 50%;
+        margin-top: 5em;
+
+        ul {
+            display: flex;
+            list-style: none;
+            width: 100%;
+            a {
+                color: white;
+                text-decoration: none;
+                text-align: center;
+                font-size: 15px;
+            }
+            .img-container {
+                width: 80%;
+                img {
+                    width: 100%;
+                }
+            }
+            li {
+                transition: ease 0.25s;
+            }
+
+            li:hover {
+                transform: scale(1.2);
+                transition: ease 0.25s;
+            }
+        }
+
+        ul ~ ul {
+            border-top: 1px solid white;
+            padding-top: 2em;
+            margin-top: 2em;
+        }
+    }
+
+    .bottom {
+        display: flex;
+        align-items: center;
+        width: 10%;
+        position: absolute;
+        bottom: 2%;
+        right: 5%;
+        a {
+            display: flex;
+            align-items: center;
+            img {
+                width: 20px;
+            }
+        }
+        a ~ a {
+            margin-left: 1em;
+        }
+        .logout {
+            text-decoration: none;
+            color: red;
+            font-size: 20px;
+            font-weight: 600;
+            cursor: pointer;
+            img {
+                width: 20px;
+
+                margin-right: 8px;
+            }
+        }
+    }
+
+    .user-info {
+        width: 100%;
+        margin-top: 2em;
+        h1 {
+            font-size: 100px;
+        }
+        p {
+            margin-top: -2em;
+        }
+    }
+
+    .logo {
+        font-family: Onsen Japan Demo;
+        font-size: 30px;
+    }
+
+    .user-details,
+    .anime-details {
+        width: 100%;
+        height: 100vh;
+        backdrop-filter: blur(1em);
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: none;
+        .container {
+            background-color: #fff;
+            width: 65%;
+            height: 50%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            .banner {
+                width: 100%;
+                height: 20%;
+                background-color: black;
+                padding: 0;
+                margin: 0;
+                margin-bottom: 2em;
+                background-image: url(../../../../Resources/Images/MHA.jpg);
+                background-size: cover;
+            }
+            .card-grp {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                width: 100%;
+                justify-items: center;
+                align-content: center;
+                row-gap: 2em;
+            }
+            .card {
+                color: black;
+                box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.312);
+                padding: 1em;
+                user-select: none;
+
+                h1 {
+                    font-size: 45px;
+                }
+
+                p {
+                    font-size: 15px;
+                    opacity: 60%;
+                }
+            }
+        }
+    }
+
+    .close-btn {
+        background-color: #fff;
+        width: 45px;
+        height: 45px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 10%;
+        top: 10%;
+        border-radius: 100%;
+        cursor: pointer;
+        img {
+            width: 50%;
+        }
+    }
+
+    .anime-details {
+        .container {
+            height: 70%;
+        }
+    }
+    .user-details.active {
+        display: flex;
+    }
+    .anime-details.active {
+        display: flex;
+    }
+}

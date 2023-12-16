@@ -1,0 +1,215 @@
+:root {
+  --bgColor1: #0f0f0f;
+}
+
+.PlayEpisode-section {
+  padding: 2em 6em;
+}
+
+.PlayEpisode-section .card-container {
+  padding: 0;
+}
+
+.PlayEpisode-section .start, .PlayEpisode-section .End {
+  padding: 3em 0em;
+}
+
+.PlayEpisode-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5em;
+  position: relative;
+}
+
+.PlayEpisode-container .EpisodeVideo {
+  width: 900px;
+}
+
+.PlayEpisode-container .left {
+  letter-spacing: 3px;
+  width: 80%;
+}
+
+.PlayEpisode-container .left .controls {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 50%;
+}
+
+.PlayEpisode-container .left .controls .auto-play label {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.PlayEpisode-container .left .controls .auto-play input[type="checkbox"] {
+  margin-right: 0.5em;
+}
+
+.PlayEpisode-container .left .controls .switch-ep {
+  margin-left: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.PlayEpisode-container .left .controls .switch-ep .prev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.PlayEpisode-container .left .controls .switch-ep .prev img {
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+}
+
+.PlayEpisode-container .left .controls .switch-ep .next {
+  margin-left: 1em;
+}
+
+.PlayEpisode-container .left .controls .switch-ep .next img {
+  margin-left: 10px;
+}
+
+.PlayEpisode-container .left .ep-content {
+  margin-top: 2em;
+  width: 100%;
+  background-color: #0f0f0f;
+  padding: 1em 2em;
+  position: absolute;
+  bottom: -25%;
+}
+
+.PlayEpisode-container .left .ep-content .Ep-data {
+  letter-spacing: 3px;
+  font-size: 25px;
+}
+
+.PlayEpisode-container .right {
+  width: 32%;
+}
+
+.PlayEpisode-container .right .subHead {
+  letter-spacing: 3px;
+  font-size: 25px;
+  margin-bottom: 2em;
+}
+
+.PlayEpisode-container .right .episode-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 500px;
+  padding: 2em;
+  background-color: var(--bgColor1);
+}
+
+.PlayEpisode-container .right .episode-list .ep-list-container {
+  overflow-y: scroll;
+  scrollbar-width: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.PlayEpisode-container .right .episode-list .ep-list-container a {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.All-Episode {
+  background-color: #0f0f0f;
+  margin-top: 9em;
+}
+
+.All-Episode .season {
+  padding: 2em;
+}
+
+.All-Episode .season .list-season {
+  margin-bottom: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.All-Episode .season .list-season p {
+  cursor: pointer;
+  opacity: 40%;
+}
+
+.All-Episode .season .list-season p ~ p {
+  margin-left: 1em;
+}
+
+.All-Episode .season .list-season p.active {
+  opacity: 100%;
+}
+
+.All-Episode .season .episodes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[16];
+      grid-template-columns: repeat(16, 1fr);
+  justify-items: center;
+}
+
+.All-Episode .season .episodes .ep {
+  width: 50px;
+  height: 35px;
+  border-radius: 2px;
+  background-color: #323232;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  opacity: 40%;
+  color: white;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.All-Episode .season .episodes .ep.active {
+  opacity: 100%;
+  background-color: red;
+}
+/*# sourceMappingURL=PlayEpisode.css.map */

@@ -1,0 +1,46 @@
+.NewsCard2 {
+  width: 400px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  text-decoration: none;
+}
+
+.NewsCard2 .img-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.NewsCard2 .img-container img {
+  -webkit-transition: ease 0.25s;
+  transition: ease 0.25s;
+  width: 100%;
+}
+
+.NewsCard2 .content {
+  text-align: center;
+}
+
+.NewsCard2 .content p ~ p {
+  opacity: 50%;
+}
+
+.NewsCard2:hover .img-container img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: ease 0.25s;
+  transition: ease 0.25s;
+}
+/*# sourceMappingURL=NewsCard2.css.map */

@@ -1,0 +1,331 @@
+:root {
+  --primary-color: #17af9a;
+  --font1: Onsen Japan Demo;
+}
+
+#root {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.admin .banner {
+  width: 100%;
+  height: 30vh;
+  background-image: url(../../../../Resources//Assets/bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+}
+
+.admin .banner .logo {
+  font-size: 18px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: 3em;
+  margin-top: 2em;
+}
+
+.admin .banner h1 {
+  font-family: var(--font1);
+  font-size: 80px;
+}
+
+.admin .banner ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  position: absolute;
+  top: 25%;
+  left: 3.5%;
+}
+
+.admin .banner ul a {
+  color: white;
+  text-decoration: none;
+}
+
+.admin-bg {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.821)), to(rgba(0, 0, 0, 0.601))), url(../../../../Resources//Assets/bg1.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.821), rgba(0, 0, 0, 0.601)), url(../../../../Resources//Assets/bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  background-attachment: fixed;
+}
+
+.AddAnime {
+  width: 100%;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navigationHeader {
+  font-weight: 300;
+}
+
+form {
+  padding: 2em;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form .sections {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+form .section1,
+form .section2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+
+form .section2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form input,
+form textarea,
+form select {
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-bottom: 1px solid white;
+  padding: 1em;
+  margin: 2em 0em;
+  width: 100%;
+  outline: none;
+}
+
+form input[type="file"] {
+  margin-bottom: 5em;
+  cursor: pointer;
+  opacity: 0%;
+  display: none;
+}
+
+form label {
+  cursor: pointer;
+}
+
+form .section2 {
+  margin-top: 4em;
+}
+
+form .section2 label {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+form .section2 label .img-container {
+  background-color: #9a9a9a;
+  border-radius: 5px;
+  width: 30%;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+form .section2 label .img-container img {
+  width: 30%;
+}
+
+form label + label {
+  margin-top: 5em;
+}
+
+form textarea {
+  border: 1px solid white;
+}
+
+form button {
+  background-color: var(--primary-color);
+  border: none;
+  color: white;
+  padding: 1em 0em;
+  cursor: pointer;
+  width: 10%;
+}
+
+form .radioGrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2em 0em;
+  width: 100%;
+}
+
+form .radioGrp input {
+  margin: 0;
+  padding: 0;
+  width: 10%;
+}
+
+form select option {
+  color: black;
+}
+
+.blocker {
+  width: 20%;
+}
+
+.admin-nav {
+  padding: 1em 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.admin-nav .logo {
+  font-family: var(--font1);
+  font-size: 18px;
+}
+
+.admin-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.admin-nav ul a {
+  color: white;
+  text-decoration: none;
+}
+
+.admin-nav form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.admin-nav form h1 {
+  font-family: var(--font1);
+  font-size: 30px;
+}
+
+.admin-nav .search-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-self: center;
+  width: 40%;
+}
+
+.admin-nav .search-btn input {
+  border: 1px solid white;
+  background-color: #fff;
+  color: black;
+  border-radius: 5em 0em 0em 5em;
+  height: 100%;
+}
+
+.admin-nav .search-btn button {
+  background-color: white;
+  border-radius: 0em 5em 5em 0em;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.admin-nav .search-btn button img {
+  width: 50%;
+}
+/*# sourceMappingURL=AddAnime.css.map */

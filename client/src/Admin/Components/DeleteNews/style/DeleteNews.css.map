@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,WAAW,CAAA;EACP,MAAM,EAAE,KAAK;CAUhB;;AAXD,AAEI,WAFO,CAEP,eAAe,CAAA;EACX,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,cAAa;EACpC,OAAO,EAAE,GAAG;EACZ,UAAU,EAAE,GAAG;EACf,aAAa,EAAE,MAAM;EACrB,aAAa,EAAE,MAAM;EACrB,OAAO,EAAE,GAAG;CACf",
+    "sources": [
+        "DeleteNews.scss"
+    ],
+    "names": [],
+    "file": "DeleteNews.css"
+}

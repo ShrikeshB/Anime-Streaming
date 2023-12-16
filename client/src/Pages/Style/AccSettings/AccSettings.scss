@@ -1,0 +1,461 @@
+.Acc-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+    position: relative;
+    .cover-img {
+        width: 100%;
+        height: 30vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .acc-sub-contain {
+        display: flex;
+        width: 70%;
+        background-color: #fff;
+        position: absolute;
+        top: 20%;
+        height: 550px;
+
+        .sub-nav {
+            width: 30%;
+            box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.451);
+            padding: 2em 0em;
+            display: flex;
+            flex-direction: column;
+            margin-right: 2em;
+            h1 {
+                font-size: 20px;
+                font-weight: 400;
+                margin-left: 2em;
+                margin-bottom: 1em;
+            }
+            ul {
+                width: 100%;
+                list-style: none;
+                li {
+                    width: 100%;
+                    height: 80px;
+                    cursor: pointer;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    font-size: 20px;
+
+                    a,
+                    p {
+                        text-decoration: none;
+                        color: black;
+                        z-index: 12;
+                        margin-left: 2em;
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                    }
+                    p {
+                        color: red;
+                    }
+                }
+                li.active {
+                    background-color: red;
+                    a {
+                        color: white;
+                    }
+                }
+
+                li:hover {
+                    a,
+                    p {
+                        color: white;
+                    }
+                }
+                li::before {
+                    content: "";
+                    z-index: 1;
+                    background-color: red;
+                    position: absolute;
+                    width: 0%;
+                    height: 100%;
+                }
+
+                li:hover::before {
+                    opacity: 100%;
+                    animation: anime 0.5s forwards;
+                }
+
+                @keyframes anime {
+                    0% {
+                        width: 0%;
+                    }
+                    100% {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    align-self: center;
+    justify-self: center;
+    border-radius: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3em;
+    position: relative;
+
+    img {
+        width: 100%;
+        display: block;
+        z-index: 2;
+        position: absolute;
+        transform: scale(2);
+    }
+}
+
+.UI-contain {
+    width: 60%;
+    padding: 1em;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll .cust-Form {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2em;
+        input {
+            color: black;
+            border: none;
+            border-bottom: 1px solid black;
+            padding: 1em;
+            width: 100%;
+        }
+        .input-div {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 2em;
+            p {
+                font-size: 12px;
+                margin-top: 0em;
+                opacity: 50%;
+                cursor: pointer;
+                align-self: flex-end;
+            }
+        }
+        input ~ input {
+            margin-top: 2em;
+        }
+        button {
+            background-color: red;
+            width: 30%;
+            border: none;
+            color: white;
+            margin-top: 2em;
+            padding: 1em;
+            cursor: pointer;
+            border-radius: 5em;
+        }
+
+        .profile-img {
+            position: relative;
+        }
+        .profile-img:before {
+            content: "";
+            background-image: url(../../../Resources//Icons/edit.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            z-index: 5;
+            opacity: 0;
+            transition: ease 0.25s;
+        }
+        .profile-img:hover::before {
+            opacity: 100%;
+            transition: ease 0.25s;
+        }
+    }
+}
+.cust-Form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 2em;
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    input {
+        color: black;
+        border: none;
+        border-bottom: 1px solid black;
+        padding: 1em;
+        width: 100%;
+        outline: none;
+    }
+    .input-div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 2em;
+        p {
+            font-size: 12px;
+            margin-top: 0em;
+            opacity: 50%;
+            cursor: pointer;
+            align-self: flex-end;
+        }
+    }
+    input ~ input {
+        margin-top: 2em;
+    }
+    button {
+        background-color: red;
+        width: 40%;
+        border: none;
+        color: white;
+        margin-top: 2em;
+        padding: 1em;
+        cursor: pointer;
+        border-radius: 5em;
+    }
+}
+.overlay-blur {
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 100vh;
+    z-index: 98;
+    background: #0000006d;
+    position: absolute;
+}
+.overlay-blur.active {
+    display: block;
+}
+
+.forgot-pass-contain {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .forgot-pass {
+        background-color: #fff;
+        width: 40%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.533);
+        position: relative;
+        overflow: hidden;
+        z-index: 101;
+
+        .close-btn {
+            overflow: hidden;
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            top: 5%;
+            right: 5%;
+            cursor: pointer;
+            img {
+                width: 100%;
+            }
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: 300%;
+            transform: translateX(0%);
+            position: absolute;
+            left: 0;
+            transition: ease 0.25s;
+            .step {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .step2 {
+                .cust-Form {
+                    .input-fields {
+                        display: grid;
+                        grid-template-columns: repeat(4, 1fr);
+                        column-gap: 1em;
+                        width: 100%;
+                        input {
+                            border: 1px solid black;
+                            margin-top: 0;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ForgotPass {
+    display: none;
+}
+.ForgotPass.active {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.billingInfo {
+    .UI-contain {
+        scrollbar-width: none;
+    }
+    button {
+        background-color: red;
+        width: 30%;
+        border: none;
+        color: white;
+        margin-top: 2em;
+        padding: 1em;
+        cursor: pointer;
+        border-radius: 5em;
+    }
+
+    .billing-card {
+        width: 100%;
+        box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.241);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 80%;
+        margin-top: 2em;
+        .title {
+            width: 100%;
+            background-color: red;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            margin-bottom: 2em;
+            h2 {
+                font-weight: 400;
+                letter-spacing: 2px;
+            }
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 55%;
+            h1 {
+                font-weight: 500;
+                font-size: 25px;
+            }
+        }
+    }
+
+    .billing-card.deactive {
+        display: none;
+    }
+}
+
+.Change-Email {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    background: #0000006d;
+    z-index: 100;
+    .close-btn {
+        overflow: hidden;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        cursor: pointer;
+        img {
+            width: 100%;
+        }
+    }
+    .container {
+        background-color: #fff;
+        width: 40%;
+        padding: 6em 4em;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .login-form {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        p {
+            font-size: 12px;
+            opacity: 50%;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        input {
+            border-color: black;
+            color: black;
+        }
+        button {
+            background-color: red;
+            width: 50%;
+            margin-top: 2em;
+        }
+
+        .email-verify-form {
+            display: none;
+        }
+        .email-verify-form.active {
+            display: flex;
+        }
+
+        .loginForm.deactive {
+            display: none;
+        }
+    }
+    .login-form.active {
+        display: flex;
+    }
+}
+
+.Change-Email.active {
+    display: flex;
+}

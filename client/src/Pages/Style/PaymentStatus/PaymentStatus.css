@@ -1,0 +1,103 @@
+.PaymentStatus {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  color: black;
+}
+
+.PaymentStatus .cover-img {
+  position: absolute;
+}
+
+.PaymentStatus .status-form {
+  z-index: 2;
+  width: 40%;
+  height: 70%;
+  background-color: #fff;
+  -webkit-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.656);
+          box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.656);
+  padding: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.PaymentStatus .status-form .status {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.PaymentStatus .status-form .status .img-container {
+  width: 45px;
+  height: 45px;
+  overflow: hidden;
+}
+
+.PaymentStatus .status-form .status .img-container img {
+  width: 100%;
+}
+
+.PaymentStatus .status-form .status p {
+  margin-top: 0.5em;
+  color: green;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.PaymentStatus .status-form .content {
+  margin-top: 2em;
+  width: 90%;
+}
+
+.PaymentStatus .status-form .content .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.PaymentStatus .status-form .content .container p {
+  margin-bottom: 1em;
+}
+
+.PaymentStatus .status-form .content .container .right {
+  text-align: right;
+}
+
+.PaymentStatus .status-form button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 1em 2em;
+  cursor: pointer;
+}
+/*# sourceMappingURL=PaymentStatus.css.map */

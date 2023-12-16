@@ -1,0 +1,51 @@
+.contact-us {
+  width: 100%;
+  height: 100vh;
+}
+
+.contact-us .container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-us .container .left {
+  width: 50%;
+  height: 100%;
+}
+
+.contact-us .container .left .bg {
+  width: 100%;
+  height: 100%;
+  background-image: url(../../../Resources/Images/MHA.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.contact-us .container .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2em;
+}
+
+.contact-us .container .right form {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-us .container .right form button {
+  width: 50%;
+}
+/*# sourceMappingURL=Contact.css.map */

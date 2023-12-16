@@ -1,0 +1,101 @@
+.Auth-container .form-container .payment-form {
+    overflow: hidden;
+    animation-name: animePaymentForm;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    transition: 1s ease;
+    box-shadow: none;
+    border-left: 1px solid black;
+    width: 50%;
+    top: 10%;
+    label {
+        margin-top: 1em;
+        align-self: flex-start;
+    }
+}
+
+.Auth-container {
+    overflow: hidden;
+    .payment.form-container {
+        top: 15%;
+        height: 600px;
+    }
+}
+
+.Payment-sub-contain {
+    display: flex;
+    width: 70%;
+    padding: 1em;
+    background-color: #fff;
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 80%;
+        font-size: 20px;
+        margin-top: 1.2em;
+        ul ~ ul {
+            p {
+                text-align: right;
+            }
+           
+        }
+
+        ul{
+            list-style: none;
+            li{
+                border-bottom: 1px solid black;
+                padding: .5em 0;
+            }
+            li:last-child{
+                border: none;
+                p{
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    .Bill-info {
+        border: none;
+        width: 50%;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding: 1.5em;
+        .container{
+            margin-top: 2em;
+        }
+     
+        h1 {
+            font-weight: 400;
+            letter-spacing: 5px;
+            margin-bottom: 2em;
+        }
+        ul {
+            list-style: none;
+            align-self: flex-start;
+            li ~ li {
+                margin-top: 1em;
+            }
+        }
+    }
+
+    .payment-form{
+        form{
+            align-items: center;
+        }
+    }
+}
+
+@keyframes animePaymentForm {
+    from {
+        height: 0em;
+        padding: 0;
+    }
+    to {
+        height: 100%;
+        padding: 2em;
+    }
+}

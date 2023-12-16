@@ -1,0 +1,9 @@
+.AnimeListCat{
+    padding: 4em;
+    .shounen{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin-top: 5em;
+        margin-bottom: 6em;
+    }
+}

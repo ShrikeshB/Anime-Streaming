@@ -1,0 +1,269 @@
+.chats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+}
+
+.chats .bg {
+  width: 75%;
+  height: 90vh;
+  position: absolute;
+  z-index: 0;
+  opacity: 12%;
+  right: 0%;
+  bottom: 0%;
+}
+
+.chats .left {
+  width: 25%;
+  height: 100%;
+  background-color: #0f0f0f;
+  padding: 2em;
+  z-index: 2;
+}
+
+.chats .left .logo h1 {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 5px;
+  font-family: Onsen Japan Demo;
+}
+
+.chats .right {
+  width: 100%;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.chats .right .top {
+  background-color: #e4e3e3;
+  width: 100%;
+  padding: 1em 2em;
+  position: fixed;
+  z-index: 5;
+}
+
+.chats .right .top .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  width: 40%;
+}
+
+.chats .right .top .container .info {
+  margin-left: 1em;
+}
+
+.chats .right .top .container .info p {
+  opacity: 20%;
+}
+
+.chats .right .chats-container {
+  margin-top: 5em;
+  padding: 2em;
+  width: 100%;
+  height: 75vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-width: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-anchor: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.chats .right .chats-container .bottomRef {
+  overflow-anchor: auto;
+  height: 1px;
+}
+
+.chats .right .message {
+  position: fixed;
+  bottom: 5%;
+  width: 60%;
+  border: 1px solid black;
+  border-radius: 5em;
+  height: 50px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.chats .right .message form {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.chats .right .message form input {
+  color: black;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.chats .right .message form button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: red;
+  border-radius: 100%;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.chats .right .message form button img {
+  width: 50%;
+}
+
+.profile {
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  border: 1px solid grey;
+  position: relative;
+}
+
+.profile .img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 100%;
+}
+
+.profile img {
+  width: 100%;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+.profile .noProfile {
+  width: 52%;
+}
+
+.point {
+  content: "";
+  background-color: #00ff1a;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-radius: 100%;
+  border: 2px solid white;
+  right: 1%;
+  bottom: 5%;
+}
+
+.chat1,
+.chat2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1em;
+}
+
+.chat1 .profile,
+.chat2 .profile {
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.chat1 .profile img,
+.chat2 .profile img {
+  width: 100%;
+}
+
+.chat1 .profile .noProfile,
+.chat2 .profile .noProfile {
+  width: 52%;
+}
+
+.chat1 .content,
+.chat2 .content {
+  color: black;
+  background-color: #e4e3e3;
+  border-radius: 5em;
+  padding: 1em;
+  margin-left: 1em;
+}
+
+.chat2 {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.chat2 .content {
+  background-color: #c500ff;
+  color: white;
+}
+/*# sourceMappingURL=Chats.css.map */

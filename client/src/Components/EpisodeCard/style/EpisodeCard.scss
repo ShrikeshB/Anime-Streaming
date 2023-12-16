@@ -1,0 +1,47 @@
+.EpisodeCard{
+    background-color: #fff;
+    width: 90%;
+    cursor: pointer;
+    color: black;
+    display: flex;
+    margin-bottom: 1em;
+    padding: 1em;
+    align-items: center;
+    justify-content: space-between;
+    letter-spacing: 3px;
+    font-size: 10px;
+    transition: ease .2s;
+    .left{
+        display: flex;
+        align-items: center;
+        .content{
+            margin-left: 1em;
+            .Ep{
+                font-size: 15px;
+            }
+        }
+
+        .icon-container{
+            width: 20%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    .right{
+        text-align: center;
+        
+    }
+}
+
+.EpisodeCard:hover{
+    transform: scale(1.05);
+    transition: ease .2s;
+
+}
+
+.EpisodeCard.active{
+    background-color: red;
+    color: white;
+}

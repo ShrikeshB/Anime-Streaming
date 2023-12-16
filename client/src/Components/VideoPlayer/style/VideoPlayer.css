@@ -1,0 +1,259 @@
+.vp-container {
+  width: 900px;
+  height: 500px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.vp-container video {
+  width: 100%;
+}
+
+.vp-container .controller {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 1;
+  -webkit-transition: ease 0.2s;
+  transition: ease 0.2s;
+  background-color: rgba(0, 0, 0, 0.382);
+}
+
+.vp-container .controller button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.vp-container .controller .top {
+  position: absolute;
+  top: 2%;
+  width: 100%;
+}
+
+.vp-container .controller .top p {
+  text-align: center;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.vp-container .controller .mid {
+  height: 30px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0em 1em;
+  -ms-flex-item-align: end;
+      align-self: end;
+}
+
+.vp-container .controller .mid .play-btn {
+  background-color: transparent;
+  border: none;
+  width: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.vp-container .controller .mid .play-btn .pause {
+  width: 200%;
+  -webkit-transform: scale(2.5);
+          transform: scale(2.5);
+  cursor: pointer;
+}
+
+.vp-container .controller .mid .play-btn .play {
+  width: 100%;
+  display: block;
+  cursor: pointer;
+}
+
+.vp-container .controller .mid .backward,
+.vp-container .controller .mid .forward {
+  width: 100px;
+}
+
+.vp-container .controller .mid .backward img,
+.vp-container .controller .mid .forward img {
+  width: 100%;
+}
+
+.vp-container .controller .bottom {
+  z-index: 2;
+  width: 100%;
+  justify-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-item-align: end;
+      align-self: end;
+  margin-bottom: 2em;
+  overflow: hidden;
+  padding: 0em 2em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.vp-container .controller .bottom .timeline {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 2rem;
+}
+
+.vp-container .controller .bottom .timeline .range-bar {
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: #ff0000;
+  border-radius: 5em;
+  height: 0.2rem;
+}
+
+.vp-container .controller .bottom input[type="range"]::-moz-range-thumb {
+  -webkit-appearance: none;
+  /* Override default look */
+  -moz-appearance: none;
+       appearance: none;
+  margin-top: -12px;
+  /* Centers thumb on the track */
+  background-color: white;
+  border: 0.2rem solid red;
+  border-radius: 100%;
+}
+
+.vp-container .controller .bottom .duration {
+  margin-left: 15px;
+  font-size: 14px;
+}
+
+.vp-container .controller .bottom .mute {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 23px;
+  height: 20px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 1em;
+}
+
+.vp-container .controller .bottom .mute img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.vp-container .controller .bottom .screenSize {
+  width: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  justify-self: flex-end;
+}
+
+.vp-container .controller .bottom .screenSize img {
+  width: 80%;
+  cursor: pointer;
+}
+
+.vp-container .controller .bottom select {
+  border: none;
+  margin-right: 1em;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+.vp-container .controller .bottom .below {
+  margin-top: 1em;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.vp-container .controller .bottom .below .left,
+.vp-container .controller .bottom .below .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.vp-container .controller .bottom .below .right {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.vp-container video:hover .controller {
+  opacity: 1;
+  -webkit-transition: ease 0.2s;
+  transition: ease 0.2s;
+}
+/*# sourceMappingURL=VideoPlayer.css.map */

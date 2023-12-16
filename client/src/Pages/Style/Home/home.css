@@ -1,0 +1,224 @@
+:root {
+  --primary-color: #17af9a;
+  --font-Fam: Onsen Japan Demo;
+}
+
+* {
+  font-family: poppins;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+.hero-section {
+  height: 100vh;
+  overflow: hidden;
+  min-height: 100vh;
+  width: 100%;
+  color: white;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  background-color: black;
+}
+
+.hero-section section {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.hero-section section .img-holder {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -4em;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.hero-section section .img-holder video {
+  width: 120%;
+  height: 120%;
+}
+
+.hero-section section .img-holder2.active {
+  position: absolute;
+  z-index: 1;
+  height: 140vh;
+  width: 150vw;
+  background-color: rgba(0, 0, 0, 0.432);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -8em;
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+
+.hero-section section .content {
+  width: 50%;
+  position: absolute;
+  z-index: 6;
+  -webkit-transition: all 0.75s ease-out;
+  transition: all 0.75s ease-out;
+  bottom: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 5px;
+  height: 500px;
+  text-shadow: rgba(0, 0, 0, 0.534) 0px 0px 15px;
+}
+
+.hero-section section .content .heading {
+  cursor: pointer;
+  z-index: 10;
+}
+
+.hero-section section .content .heading span {
+  font-size: 4.2rem;
+  font-weight: 1000;
+  margin: 0;
+}
+
+.hero-section section .content .heading h1 {
+  font-size: 8rem;
+  font-weight: 1000;
+  margin: 0;
+  margin-top: -50px;
+}
+
+.hero-section section .content .heading p {
+  top: 80%;
+}
+
+.hero-section section .content .heading.active {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-section .btn-grp {
+  position: absolute;
+  background-color: grey;
+}
+
+.hero-section .btn-grp a {
+  position: absolute;
+  z-index: 5;
+  text-align: center;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  background: none;
+  border: solid rgba(192, 192, 192, 0.877) 2px;
+  width: 12em;
+  height: 3.5em;
+  border-radius: 50px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 18px;
+  cursor: pointer;
+  text-shadow: rgba(0, 0, 0, 0.534) 0px 0px 15px;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  -webkit-transform: translate(0em, 0em);
+          transform: translate(0em, 0em);
+  right: -6em;
+  top: 0;
+  opacity: 0;
+}
+
+.hero-section .btn-grp a:hover {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-color: white;
+  color: black;
+  text-shadow: none;
+}
+
+.hero-section .btn-grp.active a {
+  opacity: 1;
+}
+
+.hero-section .btn-grp.active .b1 {
+  -webkit-transform: translate(12em, -15em);
+          transform: translate(12em, -15em);
+}
+
+.hero-section .btn-grp.active .b2 {
+  -webkit-transform: translate(-20em, -12em);
+          transform: translate(-20em, -12em);
+}
+
+.hero-section .btn-grp.active .b3 {
+  -webkit-transform: translate(-25em, 8em);
+          transform: translate(-25em, 8em);
+}
+
+.hero-section .btn-grp.active .b4 {
+  -webkit-transform: translate(20em, 6em);
+          transform: translate(20em, 6em);
+}
+/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,41 @@
+.warning-container {
+  width: 100%;
+  background-color: #fff28f;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2em;
+  position: fixed;
+  z-index: 500;
+  -webkit-transition: ease 0.1s;
+  transition: ease 0.1s;
+  display: none;
+}
+
+.warning-container span {
+  overflow: hidden;
+  width: 2%;
+  cursor: pointer;
+}
+
+.warning-container span img {
+  width: 50%;
+}
+
+.warning-container.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.warning-container.close {
+  display: none;
+}
+/*# sourceMappingURL=Warning.css.map */

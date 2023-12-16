@@ -1,0 +1,75 @@
+.admin-auth {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../../../Resources/Assets/bg1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.admin-auth .container {
+  width: 30%;
+}
+
+.admin-auth form {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 10;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 0px 8px black;
+          box-shadow: 0px 0px 8px black;
+}
+
+.admin-auth form h1 {
+  font-weight: 400;
+  letter-spacing: 5px;
+  margin-bottom: 2em;
+}
+
+.admin-auth form input {
+  color: black;
+  border-color: black;
+  margin: 1em;
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 1em;
+  width: 100%;
+}
+
+.admin-auth form .auth-btn {
+  background-color: red;
+  width: 50%;
+  margin-top: 3em;
+  border-radius: 5em;
+  color: white;
+  border: none;
+  padding: 1em;
+  cursor: pointer;
+}
+
+.admin-auth form p {
+  cursor: pointer;
+  margin-top: 0.5em;
+}
+/*# sourceMappingURL=AdminAuth.css.map */

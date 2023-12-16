@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,gBAAgB,CAAC;EACb,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,OAAO,EAAE,GAAG;EACZ,KAAK,EAAE,IAAI;CACd;;AAED,AAAA,eAAe,CAAC;EACZ,UAAU,EAAE,GAAG;EACf,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,cAAc;EACrC,OAAO,EAAE,GAAG;CACf",
+    "sources": [
+        "AnimeList.scss"
+    ],
+    "names": [],
+    "file": "AnimeList.css"
+}

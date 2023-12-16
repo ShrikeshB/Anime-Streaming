@@ -1,0 +1,150 @@
+.GenreContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 500px;
+  background: #000;
+  color: #fff;
+  line-height: 1;
+  overflow: hidden;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.GenreContainer img {
+  width: 100%;
+}
+
+.GenreContainer ul {
+  display: -ms-grid;
+  display: grid;
+  list-style: none;
+  -ms-grid-columns: (280px)[5];
+      grid-template-columns: repeat(5, 280px);
+  -webkit-column-gap: 1em;
+          column-gap: 1em;
+  justify-items: center;
+}
+
+.GenreContainer ul li {
+  background-color: #f1efef;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.GenreContainer ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.GenreContainer ul li a .title {
+  color: black;
+  margin-top: 2em;
+  margin-left: 1em;
+  text-transform: uppercase;
+  opacity: 20%;
+}
+
+.GenreContainer ul li .overlay {
+  background-color: #32363f;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  height: 100%;
+  width: 45%;
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.GenreContainer ul li .overlay h1,
+.GenreContainer ul li .overlay span {
+  color: #6e777e;
+  -webkit-transform: rotateZ(-90deg);
+          transform: rotateZ(-90deg);
+  text-transform: uppercase;
+  font-weight: 800;
+  text-align: center;
+}
+
+.GenreContainer ul li .overlay .head1 {
+  font-size: 90px;
+  margin-top: -0.1em;
+}
+
+.GenreContainer ul li .overlay .head2 {
+  font-size: 90px;
+  margin-top: -0.3em;
+}
+
+.GenreContainer ul li .overlay .head3 {
+  font-size: 90px;
+  margin-top: -0.2em;
+}
+
+.GenreContainer ul li .overlay .head4 {
+  font-size: 90px;
+  margin-top: -0.1em;
+}
+
+.GenreContainer ul li .overlay .head5 {
+  font-size: 60px;
+  width: 100%;
+}
+
+.GenreContainer ul li .img-container {
+  position: absolute;
+  z-index: 5;
+  width: 80%;
+  bottom: -5px;
+  -webkit-filter: saturate(0%);
+          filter: saturate(0%);
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
+}
+
+.GenreContainer ul .G5 .overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.GenreContainer ul .G5 .img-container img {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.GenreContainer ul .G3 .img-container {
+  width: 100%;
+}
+
+.GenreContainer ul li:hover .img-container {
+  -webkit-filter: saturate(100%);
+          filter: saturate(100%);
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+/*# sourceMappingURL=genre.css.map */

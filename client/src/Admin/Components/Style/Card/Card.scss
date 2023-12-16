@@ -1,0 +1,317 @@
+.card {
+    width: 280px;
+    // height: 420px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    color: white;
+    .img-container {
+        width: 70%;
+        transition: 0.2s;
+        position: relative;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            // border-radius: 0.5em;
+            transition: 0.2s;
+        }
+    }
+
+    .img-container::before {
+        transition: 0.2s;
+    }
+
+    .content {
+        margin-top: 1em;
+        p {
+            font-size: 12px;
+            opacity: 50%;
+            letter-spacing: 2px;
+        }
+
+        h1 {
+            letter-spacing: 3px;
+            margin: 0.2em 0em;
+        }
+        span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+
+            .circle {
+                height: 5px;
+                width: 5px;
+                background-color: red;
+                border-radius: 100%;
+                margin-right: 0.5em;
+            }
+            p {
+                opacity: 50%;
+                letter-spacing: 2px;
+            }
+        }
+    }
+
+    .Btns {
+        position: absolute;
+        width: 20%;
+        top: 30%;
+        opacity: 0;
+        transition: 0.5s;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .Edit-Btn,
+        .Delete-Btn {
+            width: 100px;
+            height: 40px;
+            background-color: #17af9a;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        .Delete-Btn {
+            margin-top: 1em;
+            background-color: red;
+        }
+
+        a {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+.card:hover {
+    .img-container {
+        img {
+            transition: 0.2s;
+            transform: scale(1.2);
+        }
+    }
+    .img-container::before {
+        content: "";
+        transition: 0.2s;
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.888);
+    }
+
+    .overlay {
+        display: block;
+    }
+
+    .Btns {
+        opacity: 100%;
+        transition: 0.2s;
+
+        animation-name: popUp;
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes popUp {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.AnimeListCard {
+    .editForm {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        backdrop-filter: blur(12px);
+        background: #000000b4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        display: none;
+        z-index: 5;
+
+        h1 {
+            font-family: Onsen Japan Demo;
+        }
+    }
+
+    .editForm.active {
+        display: flex;
+    }
+
+    .close-btn {
+        position: absolute;
+        right: 5%;
+        top: 5%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        cursor: pointer;
+        background-color: #fff;
+        img {
+            width: 50%;
+        }
+    }
+
+    form {
+        width: 50%;
+        height: 80%;
+        background-color: #fff;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        padding: 0;
+
+        .content {
+            width: 100%;
+            .section1 {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: space-between;
+                position: relative;
+                img {
+                    width: 100%;
+                    z-index: 2;
+                }
+
+                .img-container {
+                    .overlay {
+                        background-color: rgba(0, 0, 0, 0.63);
+                        position: absolute;
+                        z-index: 5;
+                        left: 0%;
+                        top: 0%;
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        opacity: 0;
+                        img {
+                            width: 20%;
+                        }
+                    }
+
+                    .overlay:hover {
+                        opacity: 100%;
+                    }
+                }
+                .poster-img {
+                    background-color: #9a9a9a;
+                    overflow: hidden;
+                    width: 30%;
+                    height: 300px;
+                    border-radius: 5px;
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    top: 10%;
+                    left: 10%;
+                    z-index: 3;
+                    box-shadow: 0px 0px 9px black;
+                }
+                .cover-img {
+                    background-color: #9a9a9a;
+                    overflow: hidden;
+                    width: 100%;
+                    height: 300px;
+                    border-radius: 5px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0;
+                }
+            }
+
+            .section2 {
+                margin-top: 10em;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .videofile {
+                    margin: 0em;
+                    margin-left: 5em;
+                    color: white;
+                    letter-spacing: 2px;
+                    cursor: pointer;
+                    background-color: red;
+                    margin-top: 1em;
+                    padding: 1em;
+                    width: 20%;
+                }
+                label {
+                    color: black;
+                    text-align: left;
+                    cursor: default;
+                    width: auto;
+                    align-self: flex-start;
+                    margin-left: 5em;
+                }
+                textarea {
+                    color: black;
+                    border: 1px solid black;
+                    width: 80%;
+                }
+                input {
+                    color: black;
+                    border-color: black;
+                    width: 80%;
+                }
+
+                .radioGrp {
+                    margin-left: 6em;
+                    label {
+                        margin: 0;
+                    }
+                    input {
+                        width: 10%;
+                    }
+                }
+                select {
+                    color: black;
+                    width: 80%;
+                    background-color: #d2d2d2;
+                }
+
+                video {
+                    width: 80%;
+                }
+                button {
+                    margin: 3em 0em;
+                    width: 30%;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+    }
+}
